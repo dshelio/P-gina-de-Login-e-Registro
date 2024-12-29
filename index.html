@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Página de Login e Registro</title>
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Tela de Login -->
+        <div class="form-container login-container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="email" id="login-email" placeholder="E-mail" required>
+                <input type="password" id="login-password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+            <p>Não tem uma conta? <span class="toggle" id="to-register">Criar uma conta</span></p>
+        </div>
+
+        <!-- Tela de Registro -->
+        <div class="form-container register-container">
+            <h2>Registro</h2>
+            <form id="register-form">
+                <input type="text" id="register-name" placeholder="Nome Completo" required>
+                <input type="email" id="register-email" placeholder="E-mail" required>
+                <input type="password" id="register-password" placeholder="Senha" required>
+                <input type="password" id="register-password-confirm" placeholder="Confirme a Senha" required>
+                <button type="submit">Registrar</button>
+            </form>
+            <p>Já tem uma conta? <span class="toggle" id="to-login">Fazer login</span></p>
+        </div>
+    </div>
+
+    <script src="java.java"></script>
+</body>
+</html>

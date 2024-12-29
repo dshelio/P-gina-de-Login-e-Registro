@@ -1,0 +1,109 @@
+/* Corpo da página e fundo */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url(./ti.jpg);
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container principal com formulário */
+.container {
+    width: 100%;
+    max-width: 420px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo claro com transparência */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Estilo dos formulários */
+.form-container h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 12px;
+    font-size: 1em;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Links para alternar entre login e registro */
+.toggle {
+    color: #4CAF50;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Tela de Login */
+.login-container {
+    display: block;
+}
+
+/* Tela de Registro */
+.register-container {
+    display: none;
+}
+
+/* Animações de transição */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-container {
+    animation: slideIn 0.5s ease-out;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+
+    input, button {
+        font-size: 1.1em;
+    }
+}
